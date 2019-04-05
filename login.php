@@ -71,39 +71,40 @@ if (isset($_POST['login'])) {
             <div class="col-md-8">
 
                 <div class="account-content">
-                                <form class="form-horizontal" method="post">
 
-                                    <div class="form-group ">
-                                        <div class="col-xs-12">
-                                            <input class="form-control" type="text" required="" name="username"
+                    <form class="form-horizontal" method="post">
+
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <input class="form-control" type="text" required="" name="username"
                                                    placeholder="Username or email" autocomplete="off">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-xs-12">
-                                            <input class="form-control" type="password" name="password" required=""
-                                                   placeholder="Password" autocomplete="off">
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-group account-btn text-center m-t-10">
-                                        <div class="col-xs-12">
-                                            <button class="btn w-md btn-bordered btn-danger waves-effect waves-light"
-                                                    type="submit" name="login">Log In
-                                            </button>
-                                        </div>
-                                        <div class="col-xs-12">
-                                            if you are not registered then please <a class="nav-link" href="register.php">sign up</a>
-                                        </div>
-                                    </div>
-
-                                </form>
-
-                                <div class="clearfix"></div>
-
                             </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                    <input class="form-control" type="password" name="password" required=""
+                                                   placeholder="Password" autocomplete="off">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group account-btn text-center m-t-10">
+                            <div class="col-xs-12">
+                                <button class="btn w-md btn-bordered btn-danger waves-effect waves-light"
+                                                    type="submit" name="login">Log In
+                                </button>
+                            </div>
+                            <div class="col-xs-12">
+                                If you are not registered then please <a class="nav-link" href="register.php">sign up</a>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div class="clearfix"></div>
+
+                </div>
 
             </div>
             <!-- Sidebar Widgets Column -->
