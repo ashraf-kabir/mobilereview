@@ -11,9 +11,9 @@ if (isset($_POST['submit'])) {
     if (!empty($_POST['csrftoken'])) {
         if (hash_equals($_SESSION['token'], $_POST['csrftoken'])) {
             $name = $_SESSION['userlogin'];
-			
+
             $email = $_POST['email'];
-			
+
             $comment = $_POST['comment'];
             $postid = intval($_GET['nid']);
             $st1 = '0';
@@ -114,12 +114,14 @@ if (isset($_POST['submit'])) {
                             <input type="hidden" name="csrftoken"
                                    value="<?php echo htmlentities($_SESSION['token']); ?>"/>
                             <div class="form-group">
-                                <input type="text" name="name" value="<?php echo $_SESSION['userlogin'];;?>" class="form-control" placeholder="Enter your fullname"
+                                <input type="text" name="name" value="<?php echo $_SESSION['userlogin'];; ?>"
+                                       class="form-control" placeholder="Enter your fullname"
                                        required>
                             </div>
 
                             <div class="form-group">
-                                <input type="email" name="email" value="<?php echo $_SESSION['useremail'];?>" class="form-control"
+                                <input type="email" name="email" value="<?php echo $_SESSION['useremail']; ?>"
+                                       class="form-control"
                                        placeholder="Enter your Valid email" required>
                             </div>
 

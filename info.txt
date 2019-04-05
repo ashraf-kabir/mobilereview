@@ -1,3 +1,10 @@
+Database name: reviewsite
+
+user panel:
+username: user
+password: user
+
+
 admin panel:
 
 username: admin
