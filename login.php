@@ -44,46 +44,33 @@ if (isset($_POST['login'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="mobile Portal">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- App title -->
-    <title>Mobile Review</title>
+    <title>Mobile Review | Home Page</title>
 
-    <!-- App css -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/css/core.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/css/components.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/css/pages.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/css/menu.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="assets/js/modernizr.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
 
 </head>
 
 <body class="bg-transparent">
-    <!-- HOME -->
-    <section>
-        <div class="container-alt">
-            <div class="row">
-                <div class="col-sm-12">
+<?php include('includes/header.php'); ?>
 
-                    <div class="wrapper-page">
+    <div class="container">
 
-                        <div class="m-t-40 account-pages">
-                            <div class="text-center account-logo-box">
-                                <h2 class="text-uppercase">
-                                    <a href="index.php" class="text-success">
-                                        <span><img src="assets/images/logo.png" alt="" height="50"></span>
-                                    </a>
-                                </h2>
-                                <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->
-                            </div>
-                            <div class="account-content">
+        <div class="row" style="margin-top: 4%">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+
+                <div class="account-content">
                                 <form class="form-horizontal" method="post">
 
                                     <div class="form-group ">
@@ -107,8 +94,8 @@ if (isset($_POST['login'])) {
                                                     type="submit" name="login">Log In
                                             </button>
                                         </div>
-										<div class="col-xs-12">
-                                            if you are not registered then please<a class="nav-link" href="register.php">sign up</a>
+                                        <div class="col-xs-12">
+                                            if you are not registered then please <a class="nav-link" href="register.php">sign up</a>
                                         </div>
                                     </div>
 
@@ -117,36 +104,21 @@ if (isset($_POST['login'])) {
                                 <div class="clearfix"></div>
 
                             </div>
-                        </div>
-                        <!-- end card-box-->
 
-
-                    </div>
-                    <!-- end wrapper -->
-
-                </div>
             </div>
+            <!-- Sidebar Widgets Column -->
+            <?php include('includes/sidebar.php'); ?>
+
         </div>
-    </section>
-    <!-- END HOME -->
 
-    <script>
-        var resizefunc = [];
-    </script>
+    </div>
 
-    <!-- jQuery  -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/detect.js"></script>
-    <script src="assets/js/fastclick.js"></script>
-    <script src="assets/js/jquery.blockUI.js"></script>
-    <script src="assets/js/waves.js"></script>
-    <script src="assets/js/jquery.slimscroll.js"></script>
-    <script src="assets/js/jquery.scrollTo.min.js"></script>
+        
+    <?php include('includes/footer.php'); ?>
 
-    <!-- App js -->
-    <script src="assets/js/jquery.core.js"></script>
-    <script src="assets/js/jquery.app.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
