@@ -1,6 +1,21 @@
 <?php
 session_start();
 include('includes/config.php');
+ if(!isset($_SESSION['userlogin'])){
+	 	header("location: login.php");
+
+}
+else{
+}
+if (isset($_GET['userlogout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+} 
+  
+
+
+
 ?>
 
 <!DOCTYPE html>

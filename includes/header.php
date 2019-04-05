@@ -17,6 +17,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact-us.php">Contact us</a>
                 </li>
+				<?php if(isset($_SESSION['userlogin'])):?>
+				<li class="nav-item">
+                    <a class="nav-link" href=""><?php echo $_SESSION['userlogin'];?></a>
+                </li>
+				<?php endif;?> 
+				<?php if(isset($_SESSION['userlogin'])):?>
+				<li class="nav-item">
+                    <a class="nav-link" href="userlogout.php">Logout</a>
+                </li>
+				<?php endif;?>
+				
             </ul>
         </div>
     </div>
