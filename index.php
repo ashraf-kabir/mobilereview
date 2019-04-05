@@ -1,19 +1,17 @@
 <?php
 session_start();
-include('includes/config.php');
+include 'includes/config.php';
 
-if(!isset($_SESSION['userlogin'])) {
-    
+if (!isset($_SESSION['userlogin'])) {
+
     header("location: login.php");
 
-}
-
-else{
+} else {
 }
 if (isset($_GET['userlogout'])) {
-  	session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: login.php");
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: login.php");
 }
 ?>
 
@@ -34,12 +32,11 @@ if (isset($_GET['userlogout'])) {
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
 
-
 </head>
 
 <body>
     <!-- Navigation -->
-    <?php include('includes/header.php'); ?>
+    <?php include 'includes/header.php'; ?>
 
     <!-- Page Content -->
     <div class="container">
@@ -113,7 +110,7 @@ if (isset($_GET['userlogout'])) {
             </div>
 
             <!-- Sidebar Widgets Column -->
-            <?php include('includes/sidebar.php'); ?>
+            <?php include 'includes/sidebar.php'; ?>
         </div>
         <!-- /.row -->
 
@@ -121,7 +118,7 @@ if (isset($_GET['userlogout'])) {
     <!-- /.container -->
 
     <!-- Footer -->
-    <?php include('includes/footer.php'); ?>
+    <?php include 'includes/footer.php'; ?>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
