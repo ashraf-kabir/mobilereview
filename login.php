@@ -3,6 +3,8 @@ session_start();
 //Database Configuration File
 include('includes/config.php');
 //error_reporting(0);
+
+
 if (isset($_POST['login'])) {
 
     // Getting username/ email and password
@@ -16,8 +18,6 @@ if (isset($_POST['login'])) {
     if ($num > 0) {
         $hashpassword = $num['password'];           // hashed password fetching from database
         //verifying Password
-	
-		
 		
         if ($password==$hashpassword) {
 			
@@ -28,7 +28,6 @@ if (isset($_POST['login'])) {
 		
 			
             header('location:index.php');
-			
 			
 			
         } else {
@@ -51,7 +50,7 @@ if (isset($_POST['login'])) {
     <meta name="author" content="">
 
     <!-- App title -->
-    <title>Mobile Review | Admin Panel</title>
+    <title>Mobile Review</title>
 
     <!-- App css -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
