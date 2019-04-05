@@ -11,7 +11,7 @@ include('includes/config.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>News Portal | About us</title>
+    <title>Mobile Review | About us</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +33,7 @@ include('includes/config.php');
         $query = mysqli_query($con, "select PageTitle,Description from tblpages where PageName='$pagetype'");
         while ($row = mysqli_fetch_array($query)) {
             ?>
+            <br>
             <h1 class="mt-4 mb-3"><?php echo htmlentities($row['PageTitle']) ?>
             </h1>
 
