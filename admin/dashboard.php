@@ -14,7 +14,7 @@ if (strlen($_SESSION['login']) == 0) {
         <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
         <meta name="author" content="Coderthemes">
         <!-- App title -->
-        <title>News Portal | Dashboard</title>
+        <title>Mobile Review | Dashboard</title>
         <link rel="stylesheet" href="../plugins/morris/morris.css">
 
         <!-- App css -->
