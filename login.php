@@ -112,8 +112,6 @@ if (isset($_POST['login'])) {
                 </div>
 
             </div>
-            <!-- Sidebar Widgets Column -->
-            <?php include('includes/sidebar.php'); ?>
 
         </div>
 
