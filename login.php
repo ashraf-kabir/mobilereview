@@ -20,16 +20,11 @@ if (isset($_POST['login'])) {
         //verifying Password
 
         if ($password == $hashpassword) {
-
             $user = $_SESSION['userlogin'] = $_POST['username'];
             $sql = mysqli_query($con, "SELECT email FROM user WHERE name='$user'");
             $num = mysqli_fetch_array($sql);
             $useremail = $_SESSION['useremail'] = $num[0];
-
-
             header('location:index.php');
-
-
         } else {
             echo "<script>alert('Wrong Password');</script>";
         }

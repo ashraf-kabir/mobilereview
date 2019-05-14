@@ -1,13 +1,17 @@
 <?php
 require_once 'includes/config.php';
 if (isset($_POST['reg_user'])) {
-
     // Getting username/ email and password
     $uname = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $phone = $_POST['Phone_number'];
     $query = mysqli_query($con, "insert into user(name,email,password,Phone_number) values('$uname','$email','$password','$phone')");
+
+    if ($query) {
+        echo "<script>alert('Your Account has been created successfully')</script>";
+        echo "<script>window.open('index.php','_self')</script>";
+    }
 }
 
 ?>
@@ -25,6 +29,8 @@ if (isset($_POST['reg_user'])) {
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <style type="text/css">
         body {
@@ -122,14 +128,12 @@ if (isset($_POST['reg_user'])) {
                             <div class="form-group">
                                 <input type="text" class="form-control" name="Phone_number" placeholder="Phone Number" required="required">
                             </div>
-
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg" name="reg_user">Sign Up</button>
                             </div>
                         </form>
                         <div class="text-center">Already have an account? <a href="login.php">Login here</a></div>
                     </div>
-                    <div class="clearfix"></div>
 
                 </div>
 
