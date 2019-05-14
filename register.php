@@ -79,20 +79,21 @@ if (isset($_POST['reg_user'])) {
         .signup-form .btn {
             font-size: 16px;
             font-weight: bold;
-            background: #00c1c0;
+            background: #003249;
             border: none;
             min-width: 140px;
             outline: none !important;
         }
         .signup-form .btn:hover, .signup-form .btn:focus {
-            background: #00b3b3;
+            background: #007EA7;
         }
         .signup-form a {
-            color: #00c1c0;
+            color: #007EA7;
             text-decoration: none;
         }
         .signup-form a:hover {
             text-decoration: underline;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -103,16 +104,11 @@ if (isset($_POST['reg_user'])) {
     <?php include('includes/header.php'); ?>
 
     <div class="container">
-
         <div class="row" style="margin-top: 4%">
-
             <!-- Blog Entries Column -->
             <div class="col-md-8">
-
                 <div class="account-content">
-
                     <br>
-
                     <div class="signup-form">
                         <form method="post">
                             <h2>Sign Up</h2>
@@ -134,22 +130,15 @@ if (isset($_POST['reg_user'])) {
                         </form>
                         <div class="text-center">Already have an account? <a href="login.php">Login here</a></div>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 
     <?php include('includes/footer.php'); ?>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 </html>

@@ -4,13 +4,11 @@ session_start();
 include('includes/config.php');
 //error_reporting(0);
 
-
 if (isset($_POST['login'])) {
 
     // Getting username/ email and password
     $uname = $_POST['username'];
     $password = $_POST['password'];
-
 
     // Fetch data from database on the basis of username/email and password
     $sql = mysqli_query($con, "SELECT name,email,password FROM user WHERE (name='$uname' || email='$uname')");
@@ -30,7 +28,7 @@ if (isset($_POST['login'])) {
         }
     }                    // if username or email not found in database
     else {
-        echo "<script>alert('Not registered');</script>";
+        echo "<script>alert('Not Registered');</script>";
     }
 
 }
@@ -51,8 +49,6 @@ if (isset($_POST['login'])) {
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
-
-
 </head>
 
 <body class="bg-transparent">
@@ -67,39 +63,33 @@ if (isset($_POST['login'])) {
             <div class="col-md-8">
 
                 <div class="account-content">
-
                     <h2>Log in</h2>
                     <br>
                     <form class="form-horizontal" method="post">
-
                         <div class="form-group ">
-                            <div class="col-xs-12">
+                            <div class="col-md-7">
                                 <input class="form-control" type="text" required="" name="username"
                                        placeholder="Username or email" autocomplete="off">
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <div class="col-xs-12">
+                            <div class="col-md-7">
                                 <input class="form-control" type="password" name="password" required=""
                                        placeholder="Password" autocomplete="off">
                             </div>
                         </div>
-
-
                         <div class="form-group account-btn text-center m-t-10">
-                            <div class="col-xs-12">
+                            <div class="col-md-7">
                                 <button class="btn w-md btn-bordered btn-danger waves-effect waves-light"
                                         type="submit" name="login">Log In
                                 </button>
                             </div>
                             <br>
-                            <div class="col-xs-12">
+                            <div class="col-md-7">
                                 If you are not registered, then please <a class="nav-link" href="register.php">sign
                                                                                                               up</a>
                             </div>
                         </div>
-
                     </form>
 
                     <div class="clearfix"></div>
