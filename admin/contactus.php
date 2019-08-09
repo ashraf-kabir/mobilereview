@@ -12,7 +12,7 @@ if (strlen($_SESSION['login']) == 0) {
 
         $query = mysqli_query($con, "update tblpages set PageTitle='$pagetitle',Description='$pagedetails' where PageName='$pagetype' ");
         if ($query) {
-            $msg = "About us  page successfully updated ";
+            $msg = "Contact us  page successfully updated ";
         } else {
             $error = "Something went wrong . Please try again.";
         }
