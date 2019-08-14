@@ -113,7 +113,7 @@ if (isset($_POST['submit'])) {
                             <input type="hidden" name="csrftoken"
                                    value="<?php echo htmlentities($_SESSION['token']); ?>"/>
                             <div class="form-group">
-                                <input type="text" name="name" value="<?php echo $_SESSION['userlogin'];; ?>"
+                                <input type="text" name="name" value="<?php echo $_SESSION['userlogin']; ?>"
                                        class="form-control" placeholder="Enter your fullname"
                                        required>
                             </div>
