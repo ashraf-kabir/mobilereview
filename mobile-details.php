@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
 
 </head>
 
-<body>
+<body style="padding-bottom: 100px;">
     <!-- Navigation -->
     <?php include('includes/header.php'); ?>
 
@@ -148,7 +148,8 @@ if (isset($_POST['submit'])) {
                                 <span style="font-size:11px;"><b>at</b> <?php echo htmlentities($row['postingDate']); ?></span>
                             </h5>
 
-                            <?php echo htmlentities($row['comment']); ?>            </div>
+                            <?php echo htmlentities($row['comment']); ?>
+                        </div>
                     </div>
                 <?php } ?>
 
